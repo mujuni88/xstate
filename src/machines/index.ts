@@ -1,2 +1,2 @@
 export * from './toggleMachine';
-export * from './counterTimerMachine';
+export * from './timerMachine';
