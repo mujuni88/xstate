@@ -55,8 +55,8 @@ export const timerMachine = setup({
   context: ({ input }) => {
     return {
       elapsedTime: 0,
-      maxElapsedTimeBeforeStop: input.maxElapsedTimeBeforeStop ?? 20,
-      intervalTimeInMs: input.intervalTimeInMs ?? 1000,
+      maxElapsedTimeBeforeStop: input.maxElapsedTimeBeforeStop || 20,
+      intervalTimeInMs: input.intervalTimeInMs || 1000,
     };
   },
   states: {
